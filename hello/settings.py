@@ -135,9 +135,11 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'restaurant1',
-#         'USER': 'root',
-#         'PASSWORD': 'Anubhav@123',
+#         'NAME': '# Name of database',
+#         'USER': 'put your name of user',
+#         'PASSWORD': ' # password',
+#         'HOST': 'localhost', 
+#         'PORT': '',
 #     }
 # }
 
