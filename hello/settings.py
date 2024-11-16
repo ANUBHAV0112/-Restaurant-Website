@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
+
 """
 
 import os
@@ -42,9 +43,7 @@ INSTALLED_APPS = [
     
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
-
-    
+    'allauth.socialaccount', 
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.github',
@@ -107,20 +106,7 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-# 261736975254482 -app id
-# f9c3b49f47669fbb0e6e8af6cf909e5b -app secret
 
-# 716306222920-nr2mlidb9urthbud2o9rh5odofr0iivd.apps.googleusercontent.com -google cliet id
-# 5dOLk4BEguN2AsHmP_1LckXx  -google secret key
-
-
-# SOCIAL_AUTH_FACEBOOK_KEY = '261736975254482'  # Facebook App	ID
-# SOCIAL_AUTH_FACEBOOK_SECRET = 'f9c3b49f47669fbb0e6e8af6cf909e5b'  # Facebook App Secret
-
-# SOCIAL_AUTH_GITHUB_KEY = '6a1fbb8ae329f1ab1785'  # github id
-# SOCIAL_AUTH_GITHUB_SECRET = 'e050c43066705ebd71603ee536b5b3c978eb278f'  # github secret key
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -135,18 +121,17 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': '# Name of database',
-#         'USER': 'put your name of user',
-#         'PASSWORD': ' # password',
+#         'NAME': 'restaurant2',       
+#         'USER': 'root',      
+#         'PASSWORD': 'Anubhav@123',      
 #         'HOST': 'localhost', 
-#         'PORT': '',
+#         'PORT': '3306',      
 #     }
-# }
+# } 1
 
 
 
-# Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -163,11 +148,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# soial app change settings
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -179,20 +159,18 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
 
 STATIC_URL = '/static/'
 
 SITE_ID = 1
 
-# tages of message overide
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-# added manualy by me
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 
